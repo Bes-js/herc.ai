@@ -1,0 +1,50 @@
+{
+  "name": "hercai",
+  "version": "2.0.0",
+  "description": "A powerful library for interacting with the Herc.ai API",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bes-js",
+  "license": "GPL-3.0",
+  "keywords": [
+    "ai",
+    "chatbot",
+    "chatgpt",
+    "gpt",
+    "API",
+    "web",
+    "arc",
+    "smart",
+    "smartestchatbot",
+    "api",
+    "discord",
+    "chat",
+    "chatbot",
+    "chatgpt4",
+    "chatgpt-4",
+    "openai",
+    "open-ai",
+    "hercai",
+    "herc",
+    "herc.ai",
+    "smartest",
+    "bot",
+    "robot",
+    "axios",
+    "canvafy"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bes-js/herc.ai.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Bes-js/herc.ai"
+  },
+  "homepage": "https://discord.gg/luppux",
+  "dependencies": {
+    "axios": "^1.4.0"
+  }
+}
