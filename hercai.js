@@ -11,7 +11,7 @@ class Hercai {
 async question({content}){
 if(!content || content == undefined || content == null)throw new Error("Please specify a question!");
 
-var api = await axios.get(baseurl+"?question="+JSON.stringify(content),{
+var api = await axios.get(baseurl+"?question="+encodeURI(content),{
     headers: {
         "content-type": "application/json",
         "authorization": this.apiKey,
