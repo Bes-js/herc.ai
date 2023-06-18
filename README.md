@@ -7,7 +7,9 @@
 
 **[Herc.ai](https://discord.gg/luppux) Answers Your Question According To The Language, And It Supports All Languages.**
 
-**Base API URL; [https://hercai.onrender.com/v1/hercai](https://hercai.onrender.com/v1/hercai)**
+**Question API; [https://hercai.onrender.com/v1/hercai?question=](https://hercai.onrender.com/v1/hercai?question=)**
+
+**Draw Image API; [https://hercai.onrender.com/v2/hercai?prompt=](https://hercai.onrender.com/v2/hercai?prompt=)**
 
 #
 ### ❔ [Support](https://discord.gg/luppux)
@@ -17,29 +19,51 @@
 
 #
 ## ❓ How to obtain an API Token?
-> **You can visit [discord.gg/luppux](https://discord.gg/luppux) to obtain an Free 500 Coin API Token.**
+> **You can visit [discord.gg/luppux](https://discord.gg/luppux) to obtain an Monthly Free 500 Coin API Token.**
 
 > **You Can Have [Herc.ai](https://discord.gg/luppux) With A One-Time Payment From [Herc.ai API Store](https://www.itemsatis.com/profil/64492/nietzsche.html) To Avoid More Coins And Discord..**
 #
 
 # Quick Example
  
-**Example For CommonJS;**
+**Example Question For CommonJS;**
 ```js
 // Importing The Package
 const { Hercai } = require('hercai');
 
 const client = new Hercai({apiKey: 'Your API KEY'});
 
-client.question({content:"hi, how are you?"}) .then(response => {
+client.question({content:"hi, how are you?"}).then(response => {
 console.log(response.reply);
 // The module will reply based on the message!
 
 });
 ```
 
+**Example Draw Image For CommonJS;**
+```js
+// Importing The Package
+const { Hercai } = require('hercai');
+
+const client = new Hercai({apiKey: 'Your API KEY'});
+
+// Available Models "v1" , "v2" , "v2-beta"
+client.drawImage({model:"v1",prompt:"anime girl"}).then(response => {
+console.log(response.url);
+// The module will reply based on the prompt!
+
+});
+```
+
 **[Herc.ai](https://www.itemsatis.com/profil/64492/nietzsche.html) Also Supports TypeScript And EsModule 🥳!**
 #
+> # 🪙 API Coin Prices
+**Models**|**Prices**
+:-----:|:-----:
+*question*|*2 Coin / Per*
+*drawImage* "**v1**"|*5 Coin / Per*
+*drawImage* "**v2**"|*10 Coin / Per*
+*drawImage* "**v2-beta**"|*8 Coin / Per*
 
 # Credits
  
