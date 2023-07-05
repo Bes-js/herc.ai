@@ -4,9 +4,7 @@ const axios = require('axios');
 const baseurl = "https://hercai.onrender.com/v1/hercai";
 
 class Hercai {
-    constructor({apiKey}) {
-    if(!apiKey || apiKey == undefined || apiKey == null)throw new Error("Please specify an API key!")
-    this.apiKey = apiKey;
+    constructor() {
     };
 
 /**
@@ -22,12 +20,11 @@ try{
 var api = await axios.get(baseurl+"?question="+encodeURI(content),{
     headers: {
         "content-type": "application/json",
-        "authorization": this.apiKey,
     },
 })
 return api.data;
 }catch(err){
-throw new Error("Invalid API Key or Your API Coin Amount Is Not Enough To Perform This Transaction, Charge Required For Further Transactions!")   
+throw new Error("Error: "+ err.message)   
 }
 }
 
@@ -46,12 +43,11 @@ async drawImage({model = "v1",prompt}){
     var api = await axios.get(`https://hercai.onrender.com/${model}/text2image`+"?prompt="+encodeURI(prompt),{
         headers: {
             "content-type": "application/json",
-            "authorization": this.apiKey,
         },
     })
     return api.data;
     }catch(err){
-    throw new Error("Invalid API Key or Your API Coin Amount Is Not Enough To Perform This Transaction, Charge Required For Further Transactions!")   
+    throw new Error("Error: "+ err.message)   
     }
     }
 
