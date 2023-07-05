@@ -1,5 +1,5 @@
 <p align="center"><a href="https://nodei.co/npm/hercai/"><img src="https://nodei.co/npm/hercai.png"></a></p>
-<p align="center"><img src="https://img.shields.io/npm/v/hercai?style=for-the-badge"> <img src="https://img.shields.io/github/repo-size/Bes-js/herc.ai?style=for-the-badge"> <img src="https://img.shields.io/npm/l/hercai?style=for-the-badge"> <img src="https://img.shields.io/npm/dt/hercai?style=for-the-badge"> <img src="https://img.shields.io/github/contributors/Bes-js/herc.ai?style=for-the-badge"> <img src="https://img.shields.io/github/package-json/dependency-version/Bes-js/herc.ai/axios?style=for-the-badge"> <a href="https://discord.gg/luppux" target="_blank"> <img alt="Discord" src="https://img.shields.io/badge/Chat & API Token-Click%20here-7289d9?style=for-the-badge&logo=discord"> </a></p>
+<p align="center"><img src="https://img.shields.io/npm/v/hercai?style=for-the-badge"> <img src="https://img.shields.io/github/repo-size/Bes-js/herc.ai?style=for-the-badge"> <img src="https://img.shields.io/npm/l/hercai?style=for-the-badge"> <img src="https://img.shields.io/npm/dt/hercai?style=for-the-badge"> <img src="https://img.shields.io/github/contributors/Bes-js/herc.ai?style=for-the-badge"> <img src="https://img.shields.io/github/package-json/dependency-version/Bes-js/herc.ai/axios?style=for-the-badge"> <a href="https://discord.gg/luppux" target="_blank"> <img alt="Discord" src="https://img.shields.io/badge/Support-Click%20here-7289d9?style=for-the-badge&logo=discord"> </a></p>
 
 # [Herc.ai](https://discord.gg/luppux)
 
@@ -16,14 +16,13 @@
 ### 📂 [NPM](https://npmjs.com/hercai)
 ### 📝 [Github](https://github.com/Bes-js/herc.ai)
 
-
-#
-## ❓ How to obtain an API Token?
-> **You can visit [discord.gg/luppux](https://discord.gg/luppux) to obtain an Monthly Free 500 Coin API Token.**
-
-> **You Can Have [Herc.ai](https://discord.gg/luppux) With A One-Time Payment From [Herc.ai API Store](https://www.itemsatis.com/profil/64492/nietzsche.html) To Avoid More Coins And Discord..**
 #
 
+# Appearance & Feature
+
+<a href="https://discord.gg/luppux"><image src="https://cdn.discordapp.com/attachments/950167988127006821/1126132119731699782/ezgif.com-video-to-gif_2.gif"></a>
+
+#
 # Quick Example
  
 **Example Question For CommonJS;**
@@ -31,7 +30,7 @@
 // Importing The Package
 const { Hercai } = require('hercai');
 
-const client = new Hercai({apiKey: 'Your API KEY'});
+const client = new Hercai();
 
 client.question({content:"hi, how are you?"}).then(response => {
 console.log(response.reply);
@@ -45,7 +44,7 @@ console.log(response.reply);
 // Importing The Package
 const { Hercai } = require('hercai');
 
-const client = new Hercai({apiKey: 'Your API KEY'});
+const client = new Hercai();
 
 // Available Models "v1" , "v2" , "v2-beta"
 client.drawImage({model:"v1",prompt:"anime girl"}).then(response => {
@@ -55,16 +54,9 @@ console.log(response.url);
 });
 ```
 
-**[Herc.ai](https://www.itemsatis.com/profil/64492/nietzsche.html) Also Supports TypeScript And EsModule 🥳!**
-#
-> # 🪙 API Coin Prices
-**Models**|**Prices**
-:-----:|:-----:
-*question*|*2 Coin / Per*
-*drawImage* "**v1**"|*5 Coin / Per*
-*drawImage* "**v2**"|*10 Coin / Per*
-*drawImage* "**v2-beta**"|*8 Coin / Per*
+**[Herc.ai](https://discord.gg/luppux) Also Supports TypeScript And EsModule 🥳!**
 
+#
 # Credits
  
 **Made by [FiveSoBes](https://github.com/Bes-js) And [Luppux Development](https://github.com/Luppux)**
