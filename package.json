@@ -1,11 +1,14 @@
 {
   "name": "hercai",
-  "version": "6.0.0",
+  "version": "8.0.0",
   "description": "A powerful library for interacting with the Herc.ai API",
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "hercai": "./cli.js"
   },
   "author": "Bes-js",
   "license": "GPL-3.0",
@@ -51,7 +54,12 @@
     "canvafy",
     "streamed-chatgpt-api",
     "dart-openai-sdk",
-    "completions"
+    "completions",
+    "cli",
+    "bin",
+    "command",
+    "console",
+    "cmd"
   ],
   "repository": {
     "type": "git",
