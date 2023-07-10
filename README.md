@@ -3,13 +3,14 @@
 
 # [Herc.ai](https://discord.gg/luppux)
 
-**A powerful library for interacting with the [Herc.ai](https://discord.gg/luppux) API.**
+> **A powerful library for interacting with the [Herc.ai](https://discord.gg/luppux) API.**
 
-**[Herc.ai](https://discord.gg/luppux) Answers Your Question According To The Language, And It Supports All Languages.**
+> **We Use GPT-4 as Artificial Intelligence Engine, And We Offer It To You For Free.**
+> **[Herc.ai](https://discord.gg/luppux) Answers Your Question According To The Language, And It Supports All Languages.**
 
-**Question API; [https://hercai.onrender.com/v1/hercai?question=](https://hercai.onrender.com/v1/hercai?question=)**
+> **Question API; [https://hercai.onrender.com/v1/hercai?question=](https://hercai.onrender.com/v1/hercai?question=)**
 
-**Draw Image API; [https://hercai.onrender.com/v2/hercai?prompt=](https://hercai.onrender.com/v2/hercai?prompt=)**
+> **Draw Image API; [https://hercai.onrender.com/v2/hercai?prompt=](https://hercai.onrender.com/v2/hercai?prompt=)**
 
 #
 ### ❔ [Support](https://discord.gg/luppux)
@@ -18,10 +19,15 @@
 
 #
 
-# Appearance & Feature
+# Example On CLI
 
-<a href="https://discord.gg/luppux"><image src="https://cdn.discordapp.com/attachments/950167988127006821/1126132119731699782/ezgif.com-video-to-gif_2.gif"></a>
+<a href="https://discord.gg/luppux"><image width=550 src="https://raw.githubusercontent.com/Bes-js/herc.ai/main/hercai-cli-beta.gif"></a>
 
+#
+# Installation
+```bash
+npm i hercai -g
+```
 #
 # Quick Example
  
@@ -53,7 +59,10 @@ console.log(response.url);
 
 });
 ```
-
+**Example CLI Command Usage;**
+```hs
+hercai <Your Question>
+```
 **[Herc.ai](https://discord.gg/luppux) Also Supports TypeScript And EsModule 🥳!**
 
 #
