@@ -9,15 +9,17 @@ class Hercai {
 
 /**
 * question
+* @param {string} model "v1" , "v2"
 * @param {string} content The Question You Want to Ask Artificial Intelligence.
-* @example question({content:"how are you?"})
+* @example question({model:"v1",content:"how are you?"})
 * @type {string} The Question You Want to Ask Artificial Intelligence.
 * @returns {Hercai}
 */
-async question({content}){
+async question({model = "v1",content}){
+if(!["v1","v2"].some(ind => model == ind)) model = "v1";
 if(!content || content == undefined || content == null)throw new Error("Please specify a question!");
 try{
-var api = await axios.get(baseurl+"?question="+encodeURI(content),{
+var api = await axios.get(`https://hercai.onrender.com/${model}/hercai?question=`+encodeURI(content),{
     headers: {
         "content-type": "application/json",
     },
