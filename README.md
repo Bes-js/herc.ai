@@ -45,8 +45,8 @@ const { Hercai } = require('hercai');
 
 const client = new Hercai();
 
-// Available Models "v1" , "v2" | Default Model;"v1"
-client.question({model:"v2",content:"hi, how are you?"}).then(response => {
+// Available Models "v1" | Default Model;"v1"
+client.question({content:"hi, how are you?"}).then(response => {
 console.log(response.reply);
 // The module will reply based on the message!
 
