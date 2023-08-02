@@ -11,7 +11,7 @@
 
 > **Question API; [https://hercai.onrender.com/v1/hercai?question=](https://hercai.onrender.com/v1/hercai?question=)**
 
-> **Text To Image API; [https://hercai.onrender.com/v2/text2image?prompt=](https://hercai.onrender.com/v2/hercai?prompt=)**
+> **Text To Image API; [https://hercai.onrender.com/v2/text2image?prompt=](https://hercai.onrender.com/v2/text2image?prompt=)**
 
 #
 ### ❔ [Support](https://discord.gg/luppux)
