@@ -1,19 +1,23 @@
 {
-  "name": "@Bes-js/hercai",
-  "version": "8.0.0",
+  "name": "hercai",
+  "version": "10.0.2",
   "description": "A powerful library for interacting with the Herc.ai API",
   "main": "index.js",
-  "publishConfig":{
-  "registry":"https://npm.pkg.github.com/@Bes-js"
-  },
-  "types": "index.d.ts",
+  "types": "./types/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
     "hercai": "./cli.js"
   },
-  "author": "Bes-js",
+  "author": {
+    "name": "Bes-js",
+    "url": "https://github.com/Bes-js"
+  },
+  "funding": {
+    "type": "buymeacoffee",
+    "url": "https://www.buymeacoffee.com/beykant"
+  },
   "license": "GPL-3.0",
   "keywords": [
     "ai",
@@ -62,7 +66,23 @@
     "bin",
     "command",
     "console",
-    "cmd"
+    "cmd",
+    "bing",
+    "bing-chat",
+    "openaiapi",
+    "open.ai",
+    "openai-api",
+    "luppux",
+    "fivesobes",
+    "five",
+    "bes",
+    "discord-ai",
+    "discordai",
+    "free",
+    "lodash",
+    "react",
+    "next",
+    "chalk"
   ],
   "repository": {
     "type": "git",
