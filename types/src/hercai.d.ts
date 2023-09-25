@@ -7,8 +7,6 @@ export = Hercai;
  * @class
  */
 declare class Hercai {
-    data: HercaiData;
-
 
 /**
 * The Question You Want to Ask Artificial Intelligence.
@@ -20,7 +18,7 @@ declare class Hercai {
 * @returns {Hercai}
 * @async
 */
-question(model:"v2"|"beta",content:string):Hercai;
+question(object:{model:"v2"|"beta",content:string}):Promise<{content:string,reply:string}>;
 
 
  /**
@@ -32,16 +30,10 @@ question(model:"v2"|"beta",content:string):Hercai;
 * @returns {Hercai}
 * @async
 */
- drawImage(model:"v1"|"v2"|"v2-beta",prompt:string):Hercai;
+ drawImage(object:{model:"v1"|"v2"|"v2-beta",prompt:string}):Promise<{model:string,prompt:string,url:string}>;
 
 
 }
 
-declare namespace Hercai { export { HercaiData }; }
-
-type HercaiData = {
-    model:string|"v1"|"v2"|"beta"|"v2-beta",
-    content:string,
-    prompt:string
-};
+declare namespace Hercai { }
 //# sourceMappingURL=hercai.d.ts.map
