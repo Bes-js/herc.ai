@@ -6,12 +6,12 @@
 
 > **A powerful library for interacting with the [Herc.ai](https://discord.gg/luppux) API.**
 
-> **We Use GPT-3.5 / GPT-4 as Artificial Intelligence Engine, And We Offer It To You For Free.**
+> **We Offer It To You For Free.**
 > **[Herc.ai](https://discord.gg/luppux) Answers Your Question According To The Language, And It Supports All Languages.**
 
-> **Question API; [https://hercai.onrender.com/v2/hercai?question=](https://herc-ai.onrender.com/v1/hercai?question=)**
+> **Question API; [https://hercai.onrender.com/v2/hercai?question=](https://hercai.onrender.com/v2/hercai?question=)**
 
-> **Text To Image API; [https://hercai.onrender.com/v2/text2image?prompt=](https://herc-ai.onrender.com/v2/hercai?prompt=)**
+> **Text To Image API; [https://hercai.onrender.com/v2/text2image?prompt=](https://hercai.onrender.com/v2/text2image?prompt=)**
 
 #
 ### ❔ [Support](https://discord.gg/luppux)
@@ -43,10 +43,10 @@ npm i hercai
 /* Importing The Package */
 const { Hercai } = require('hercai');
 
-const client = new Hercai();
+const herc = new Hercai();
 
 /* Available Models "v2","beta" | Default Model; "v2" */
-client.question({model:"v2",content:"hi, how are you?"}).then(response => {
+herc.question({model:"v2",content:"hi, how are you?"}).then(response => {
 console.log(response.reply);
 /* The module will reply based on the message! */
 
@@ -58,10 +58,10 @@ console.log(response.reply);
 /* Importing The Package */
 const { Hercai } = require('hercai');
 
-const client = new Hercai();
+const herc = new Hercai();
 
 /* Available Models "v1" , "v2" , "v2-beta" | Default Model; "v2" */
-client.drawImage({model:"v2",prompt:"anime girl"}).then(response => {
+herc.drawImage({model:"v2",prompt:"anime girl"}).then(response => {
 console.log(response.url);
 /* The module will reply based on the prompt! */
 
