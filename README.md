@@ -67,6 +67,11 @@ console.log(response.url);
 
 });
 ```
+**Example Interface For TypeScript;**
+```ts
+import { QuestionData, DrawImageData } from "hercai";
+
+```
 **Example CLI Command Usage;**
 ```hs
 hercai <Your Question>
