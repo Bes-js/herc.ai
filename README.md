@@ -1,6 +1,6 @@
 <p align="center"> <a href="#"> <img width=500 src="https://raw.githubusercontent.com/Bes-js/herc.ai/main/hercai-logo.png"></a></p> 
 <p align="center"><a href="https://nodei.co/npm/hercai/"><img src="https://nodei.co/npm/hercai.png"></a></p>
-<p align="center"><img src="https://img.shields.io/npm/v/hercai?style=for-the-badge"> <img src="https://img.shields.io/github/repo-size/Bes-js/herc.ai?style=for-the-badge"> <img src="https://img.shields.io/npm/l/hercai?style=for-the-badge"> <img src="https://img.shields.io/npm/dt/hercai?style=for-the-badge"> <img src="https://img.shields.io/github/contributors/Bes-js/herc.ai?style=for-the-badge"> <img src="https://img.shields.io/github/package-json/dependency-version/Bes-js/herc.ai/axios?style=for-the-badge"> <a href="https://discord.gg/luppux" target="_blank"> <img alt="Discord" src="https://img.shields.io/badge/Support-Click%20here-7289d9?style=for-the-badge&logo=discord"> </a></p>
+<p align="center"><img src="https://img.shields.io/npm/v/hercai?style=for-the-badge"> <img src="https://img.shields.io/github/repo-size/Bes-js/herc.ai?style=for-the-badge"> <img src="https://img.shields.io/npm/l/hercai?style=for-the-badge"> <img src="https://img.shields.io/npm/dt/hercai?style=for-the-badge"> <img src="https://img.shields.io/github/contributors/Bes-js/herc.ai?style=for-the-badge"> <img src="https://img.shields.io/github/package-json/dependency-version/Bes-js/herc.ai/axios?style=for-the-badge"> <a href="https://discord.gg/luppux" target="_blank"> <img alt="Discord" src="https://img.shields.io/badge/Support-Click%20here-7289d9?style=for-the-badge&logo=discord"> </a><a href="https://www.buymeacoffee.com/beykant" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" width="120px" height="30px" alt="Buy Me A Coffee"></a></p>
 
 # [Herc.ai](https://discord.gg/luppux)
 
@@ -45,13 +45,16 @@ const { Hercai } = require('hercai');
 
 const herc = new Hercai();
 
-/* Available Models "v2","beta" | Default Model; "v2" */
+/* Available Models */
+/* "v2" , "beta" , "v3-beta" */
+/* Default Model; "v2" */
 herc.question({model:"v2",content:"hi, how are you?"}).then(response => {
 console.log(response.reply);
 /* The module will reply based on the message! */
 
 });
 ```
+#
 
 **Example Draw Image For CommonJS;**
 ```js
@@ -60,18 +63,36 @@ const { Hercai } = require('hercai');
 
 const herc = new Hercai();
 
-/* Available Models "v1" , "v2" , "v2-beta" | Default Model; "v2" */
+/* Available Models */
+/* "v1" , "v2" , "v2-beta" , "v3" (DALL-E) , "lexica" , "prodia" */
+/* Default Model; "v2" */
 herc.drawImage({model:"v2",prompt:"anime girl"}).then(response => {
 console.log(response.url);
 /* The module will reply based on the prompt! */
 
 });
 ```
-**Example Interface For TypeScript;**
+#
+**Example Interface And Usage For TypeScript;**
 ```ts
-import { QuestionData, DrawImageData } from "hercai";
+import { Hercai, QuestionData, DrawImageData } from "hercai";
+
+const herc = new Hercai();
+
+/* Question Example For TypeScript */
+herc.question({model:"v2",content:"hi, how are you?"})
+.then((response:QuestionData) => {
+console.log(response.reply);
+});
+
+/* DrawImage Example For TypeScript */
+herc.drawImage({model:"v2",prompt:"anime girl"})
+.then((response:DrawImageData) => {
+console.log(response.url);
+});
 
 ```
+#
 **Example CLI Command Usage;**
 ```hs
 hercai <Your Question>
