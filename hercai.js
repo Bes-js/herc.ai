@@ -19,17 +19,15 @@ class Hercai {
 
 /**
 * The Question You Want to Ask Artificial Intelligence.
-* @param {string} model "v2"
-* @param {string} model "beta"
 * @param {string} model "v3-beta" (GPT-4)
 * @param {string} content The Question You Want to Ask Artificial Intelligence.
-* @example client.question({model:"v2",content:"how are you?"})
+* @example client.question({model:"v3-beta",content:"how are you?"})
 * @type {string} The Question You Want to Ask Artificial Intelligence.
 * @returns {Hercai}
 * @async
 */
-async question({model = "v2",content}){
-if(!["v2","beta","v3-beta"].some(ind => model == ind)) model = "v2";
+async question({model = "v3-beta",content}){
+if(!["v3"].some(ind => model == ind)) model = "v3-beta";
 if(!content || content == undefined || content == null)throw new Error("Please specify a question!");
 try{
 var api = await axios.get(`https://hercai.onrender.com/${model}/hercai?question=`+encodeURI(content),{
@@ -52,7 +50,7 @@ throw new Error("Error: "+ err.message)
 * @returns {Hercai}
 * @async
 */
-async drawImage({model = "v1",prompt}){
+async drawImage({model = "v3",prompt}){
     if(!["v1","v2","v2-beta","v3","lexica","prodia"].some(ind => model == ind)) model = "prodia";
     if(!prompt || prompt == undefined || prompt == null)throw new Error("Please specify a prompt!");
     try{
