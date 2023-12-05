@@ -10,16 +10,14 @@ declare class Hercai {
 
 /**
 * The Question You Want to Ask Artificial Intelligence.
-* @param {string} model "v2"
-* @param {string} model "beta"
 * @param {string} model "v3-beta" (GPT-4)
 * @param {string} content The Question You Want to Ask Artificial Intelligence.
-* @example client.question({model:"v2",content:"how are you?"})
+* @example client.question({model:"v3-beta",content:"how are you?"})
 * @type {string} The Question You Want to Ask Artificial Intelligence.
 * @returns {Hercai}
 * @async
 */
-question(object:{model:"v2"|"beta"|"v3-beta",content:string}):Promise<{content:string,reply:string}>;
+question(object:{model:"v3-beta",content:string}):Promise<{content:string,reply:string}>;
 
 
 /**
