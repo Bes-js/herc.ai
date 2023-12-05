@@ -9,7 +9,7 @@
 > **We Offer It To You For Free.**
 > **[Herc.ai](https://discord.gg/luppux) Answers Your Question According To The Language, And It Supports All Languages.**
 
-> **Question API; [https://hercai.onrender.com/v2/hercai?question=](https://hercai.onrender.com/v2/hercai?question=)**
+> **Question API; [https://hercai.onrender.com/v3-beta/hercai?question=](https://hercai.onrender.com/v2/hercai?question=)**
 
 > **Text To Image API; [https://hercai.onrender.com/v2/text2image?prompt=](https://hercai.onrender.com/v2/text2image?prompt=)**
 
@@ -46,9 +46,9 @@ const { Hercai } = require('hercai');
 const herc = new Hercai();
 
 /* Available Models */
-/* "v2" , "beta" , "v3-beta" */
-/* Default Model; "v2" */
-herc.question({model:"v2",content:"hi, how are you?"}).then(response => {
+/* "v3-beta" */
+/* Default Model; "v3-beta" */
+herc.question({model:"v3-beta",content:"hi, how are you?"}).then(response => {
 console.log(response.reply);
 /* The module will reply based on the message! */
 
@@ -80,7 +80,7 @@ import { Hercai, QuestionData, DrawImageData } from "hercai";
 const herc = new Hercai();
 
 /* Question Example For TypeScript */
-herc.question({model:"v2",content:"hi, how are you?"})
+herc.question({model:"v3-beta",content:"hi, how are you?"})
 .then((response:QuestionData) => {
 console.log(response.reply);
 });
