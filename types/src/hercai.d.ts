@@ -7,17 +7,18 @@ export = Hercai;
  * @class
  */
 declare class Hercai {
-
+    constructor(apiKey?:string);
 /**
 * The Question You Want to Ask Artificial Intelligence.
 * @param {string} model "v3-beta" (GPT-4)
+* @param {string} model "gemini" (Google Gemini-Pro)
 * @param {string} content The Question You Want to Ask Artificial Intelligence.
 * @example client.question({model:"v3-beta",content:"how are you?"})
 * @type {string} The Question You Want to Ask Artificial Intelligence.
 * @returns {Hercai}
 * @async
 */
-question(object:{model:"v3-beta",content:string}):Promise<{content:string,reply:string}>;
+question(object:{model:"v3-beta"|"gemini",content:string}):Promise<{content:string,reply:string}>;
 
 
 /**
