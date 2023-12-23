@@ -9,10 +9,8 @@
 > **We Offer It To You For Free.**
 > **[Herc.ai](https://discord.gg/luppux) Answers Your Question According To The Language, And It Supports All Languages.**
 
-> **Question API; [https://hercai.onrender.com/v3-beta/hercai?question=](https://hercai.onrender.com/v2/hercai?question=)**
-
-> **Text To Image API; [https://hercai.onrender.com/v2/text2image?prompt=](https://hercai.onrender.com/v2/text2image?prompt=)**
-
+> **[✨ How about a one-time subscription to benefit from Hercai's features unlimitedly?](https://hercai-shop.onrender.com)**
+**[✨ Use Hercai Unlimited with API Key!](https://hercai-shop.onrender.com)**
 #
 ### ❔ [Support](https://discord.gg/luppux)
 ### 📂 [NPM](https://npmjs.com/hercai)
@@ -30,7 +28,7 @@
 ```bash
 npm i hercai -g
 ```
-#
+
 **📂 Installation**
 ```bash
 npm i hercai 
@@ -38,15 +36,17 @@ npm i hercai
 #
 # Quick Example
  
+ > **Question API; [https://hercai.onrender.com/v3-beta/hercai?question=](https://hercai.onrender.com/v3-beta/hercai?question=)**
+
 **Example Question For CommonJS;**
 ```js
 /* Importing The Package */
 const { Hercai } = require('hercai');
 
-const herc = new Hercai();
+const herc = new Hercai(); //new Hercai("your api key"); => Optional
 
 /* Available Models */
-/* "v3-beta" */
+/* "v3-beta" , "gemini" */
 /* Default Model; "v3-beta" */
 herc.question({model:"v3-beta",content:"hi, how are you?"}).then(response => {
 console.log(response.reply);
@@ -56,12 +56,14 @@ console.log(response.reply);
 ```
 #
 
+> **Text To Image API; [https://hercai.onrender.com/v3/text2image?prompt=](https://hercai.onrender.com/v3/text2image?prompt=)**
+
 **Example Draw Image For CommonJS;**
 ```js
 /* Importing The Package */
 const { Hercai } = require('hercai');
 
-const herc = new Hercai();
+const herc = new Hercai(); //new Hercai("your api key"); => Optional
 
 /* Available Models */
 /* "v1" , "v2" , "v2-beta" , "v3" (DALL-E) , "lexica" , "prodia" */
@@ -77,7 +79,7 @@ console.log(response.url);
 ```ts
 import { Hercai, QuestionData, DrawImageData } from "hercai";
 
-const herc = new Hercai();
+const herc = new Hercai(); //new Hercai("your api key"); => Optional
 
 /* Question Example For TypeScript */
 herc.question({model:"v3-beta",content:"hi, how are you?"})
