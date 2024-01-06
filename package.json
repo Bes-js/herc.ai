@@ -1,6 +1,6 @@
 {
   "name": "hercai",
-  "version": "11.0.1",
+  "version": "12.0.0",
   "description": "A powerful library for interacting with the Herc.ai API",
   "main": "index.js",
   "types": "./types/index.d.ts",
@@ -74,6 +74,10 @@
     "openai-api",
     "luppux",
     "fivesobes",
+    "gemini",
+    "gemini-api",
+    "gemini-pro",
+    "google",
     "five",
     "bes",
     "discord-ai",
@@ -85,7 +89,11 @@
     "chalk",
     "free",
     "lodash",
-    "stable"
+    "stable",
+    "anime",
+    "bes",
+    "fivesobes",
+    "five"
   ],
   "repository": {
     "type": "git",
@@ -96,6 +104,6 @@
   },
   "homepage": "https://discord.gg/luppux",
   "dependencies": {
-    "axios": "^1.5.0"
+    "axios": "^1.6.2"
   }
 }
