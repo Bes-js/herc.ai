@@ -36,7 +36,7 @@ npm i hercai
 #
 # Quick Example
  
- > **Question API; [https://hercai.onrender.com/v3-beta/hercai?question=](https://hercai.onrender.com/v3-beta/hercai?question=)**
+ > **Question API; [https://hercai.onrender.com/v3/hercai?question=](https://hercai.onrender.com/v3/hercai?question=)**
 
 **Example Question For CommonJS;**
 ```js
@@ -46,9 +46,9 @@ const { Hercai } = require('hercai');
 const herc = new Hercai(); //new Hercai("your api key"); => Optional
 
 /* Available Models */
-/* "v3-beta" , "gemini" */
-/* Default Model; "v3-beta" */
-herc.question({model:"v3-beta",content:"hi, how are you?"}).then(response => {
+/* "v3" , "v3-32k" , "turbo" , "turbo-16k" , "gemini" */
+/* Default Model; "v3" */
+herc.question({model:"v3",content:"hi, how are you?"}).then(response => {
 console.log(response.reply);
 /* The module will reply based on the message! */
 
@@ -66,9 +66,9 @@ const { Hercai } = require('hercai');
 const herc = new Hercai(); //new Hercai("your api key"); => Optional
 
 /* Available Models */
-/* "v1" , "v2" , "v2-beta" , "v3" (DALL-E) , "lexica" , "prodia" */
-/* Default Model; "v2" */
-herc.drawImage({model:"v2",prompt:"anime girl"}).then(response => {
+/* "v1" , "v2" , "v2-beta" , "v3" (DALL-E) , "lexica" , "prodia", "simurg", "animefy", "raava", "shonin" */
+/* Default Model; "v3" */
+herc.drawImage({model:"v3",prompt:"anime girl",negative_prompt:""}).then(response => {
 console.log(response.url);
 /* The module will reply based on the prompt! */
 
@@ -82,13 +82,13 @@ import { Hercai, QuestionData, DrawImageData } from "hercai";
 const herc = new Hercai(); //new Hercai("your api key"); => Optional
 
 /* Question Example For TypeScript */
-herc.question({model:"v3-beta",content:"hi, how are you?"})
+herc.question({model:"v3",content:"hi, how are you?"})
 .then((response:QuestionData) => {
 console.log(response.reply);
 });
 
 /* DrawImage Example For TypeScript */
-herc.drawImage({model:"v2",prompt:"anime girl"})
+herc.drawImage({model:"v3",prompt:"anime girl",negative_prompt:""})
 .then((response:DrawImageData) => {
 console.log(response.url);
 });
