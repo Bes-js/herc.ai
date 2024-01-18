@@ -1,4 +1,5 @@
 import Hercai from "./src/hercai";
+import {version} from "../package.json";
 
 type QuestionData = {
 content:string,
@@ -14,5 +15,6 @@ url:string
 export {
 Hercai,
 QuestionData,
-DrawImageData
+DrawImageData,
+version
 };
