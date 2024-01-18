@@ -4,7 +4,8 @@ const axios = require("axios");
 var packs = require("./package.json")
 versionControl(packs.version);
 module.exports = {
-Hercai: require('./hercai')
+Hercai: require('./hercai'),
+version: packs.version,
 }
 async function versionControl(version){
 try{var pack = await axios.get(`https://registry.npmjs.com/-/v1/search?text=hercai`)
