@@ -7,6 +7,9 @@ For English;
 5. If You Want Key Reset, Please Contact Moderators of https://discord.gg/luppux
 6. Purchased Keys Cannot Be Refunded.
 7. If you have made a purchase, you are deemed to have read the above rules and you will be subject to the rules.
+8. If your card does not have 3D requirement for Direct API Payments, 3D Verification will not appear.
+9. In Direct API Payments, If Illegally Purchased Products (Keys) Are Verified, They Are Banned And Lawsuits, etc. If necessary, necessary information is given to the parties.
+10. Card Information Entered in Direct API Payments is Not Recorded, No Data is Kept.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -19,3 +22,6 @@ Türkçe İçin;
 5. Anahtar Sıfırlamak İstiyorsanız Lütfen https://discord.gg/luppux Moderatörleriyle İletişime Geçin
 6. Satın Alınan Anahtarların İadesi Yapılamaz.
 7. Satın alma işlemi gerçekleştirdiğiniz takdirde yukarıdaki kuralları okuduğunuz varsayılacak ve kurallara tabi olacaksınız.
+8. Direct API Ödemelerinde Kartınızda Eğer 3D Zorunluluğu Mevcut Değil İse 3D Doğrulama Çıkmamaktadır.
+9. Direct API Ödemelerinde Yasa Dışı Yollarla Alınmış Ürün(Key)'ler Doğrulandığı Taktirde Yasaklanılmakta Ve Dava vb. Durumu Olduğu Taktirde Gerekli Bilgiler Taraflara Verilmektedir.
+10. Direct API Ödemelerinde Girilen Kart Bilgileri Kayıt Edilmemektedir, Veri Tutulmamaktadır.
