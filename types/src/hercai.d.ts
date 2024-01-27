@@ -22,7 +22,7 @@ declare class Hercai {
 * @returns {Hercai}
 * @async
 */
-question(object:{model:"v3"|"v3-32k"|"turbo"|"turbo-16k"|"gemini",content:string,personality:string|""}):Promise<{content:string,reply:string}>;
+question(object:{model:"v3"|"v3-32k"|"turbo"|"turbo-16k"|"gemini",content:string,personality?:string|""}):Promise<{content:string,reply:string}>;
 
 
 /**
@@ -35,7 +35,7 @@ question(object:{model:"v3"|"v3-32k"|"turbo"|"turbo-16k"|"gemini",content:string
 * @returns {Hercai}
 * @async
 */
- drawImage(object:{model:"v1"|"v2"|"v2-beta"|"v3"|"lexica"|"prodia"|"simurg"|"animefy"|"raava"|"shonin",prompt:string,negative_prompt:string|""}):Promise<{model:string,prompt:string,url:string}>;
+ drawImage(object:{model:"v1"|"v2"|"v2-beta"|"v3"|"lexica"|"prodia"|"simurg"|"animefy"|"raava"|"shonin",prompt:string,negative_prompt?:string|""}):Promise<{model:string,prompt:string,url:string}>;
 
 
 }
