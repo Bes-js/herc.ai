@@ -1,3 +1,23 @@
+# Version 12.1.1
+<Timestamp: Sat Jan 27 2024 20:40:54 GMT+0000 (Coordinated Universal Time)>
+
+>> 🟢 Added
+
+None
+
+>> 🔴 Removed 
+
+None
+
+>> 🔃 Changed
+
+None
+
+>> 🪄 Patches
+
+Bug Patch for TypeScript.
+
+
 # Version 12.1.0
 <Timestamp: 2024-01-18T20:46:09.034Z>
 
