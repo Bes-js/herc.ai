@@ -2,7 +2,7 @@ For English;
 
 1. Returns Will Not Be Accepted If the Wrong Email or Name is Entered.
 2. The Keys Given Are One Time, That Is Unlimited, Not A Monthly Subscription.
-3. Payments sent below the Product Payment Amount of TRY 115 Turkish Lira and USD 4 Dollars will not be accepted and will not be refunded.
+3. Payments sent below the Product Payment Amount of TRY 150 Turkish Lira and USD 5 Dollars will not be accepted and will not be refunded.
 4. Once the payment is successful, your key will be automatically delivered to the entered e-mail address. If you have not received the e-mail, check your spam folder or make sure that you have entered a correct e-mail address.
 5. If You Want Key Reset, Please Contact Moderators of https://discord.gg/luppux
 6. Purchased Keys Cannot Be Refunded.
@@ -17,7 +17,7 @@ Türkçe İçin;
 
 1. Yanlış E-Posta veya İsim Girilmesi Halinde İade Kabul Edilmeyecektir.
 2. Verilen Anahtarlar Tek Seferliktir, Yani Sınırsızdır, Aylık Abonelik Değildir.
-3. 115 TL Türk Lirası ve 4 Dolar tutarındaki Ürün Ödeme Tutarının altında gönderilen ödemeler kabul edilmeyecek ve iade edilmeyecektir.
+3. 150 TL Türk Lirası ve 5 Dolar tutarındaki Ürün Ödeme Tutarının altında gönderilen ödemeler kabul edilmeyecek ve iade edilmeyecektir.
 4. Ödeme başarılı olduktan sonra anahtarınız otomatik olarak girilen e-posta adresine teslim edilecektir. E-postayı almadıysanız spam klasörünüzü kontrol edin veya doğru e-posta adresi girdiğinizden emin olun.
 5. Anahtar Sıfırlamak İstiyorsanız Lütfen https://discord.gg/luppux Moderatörleriyle İletişime Geçin
 6. Satın Alınan Anahtarların İadesi Yapılamaz.
