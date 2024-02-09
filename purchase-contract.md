@@ -1,4 +1,17 @@
-For English;
+# To Purchase API Key
+
+> **https://hercai-shop.onrender.com**
+<br>
+<br>
+
+`For English;`
+
+# What Does Hercai API Key Do?
+
+*Under Normal Conditions, 15 Question & Text2Image API Requests per Minute are Given Free of Charge, This Limitation is Reset Every Minute, If You Exceed the 15 Limit in the Free Version, You Will Receive 429 Too Many Request Code, To Remove This Reset, You Pay a One-Time Fee and Increase Your Request Limit to 1000 Per Minute. You can develop it as 60000 requests per hour.*
+
+
+# Purchase Rules
 
 1. Returns Will Not Be Accepted If the Wrong Email or Name is Entered.
 2. The Keys Given Are One Time, That Is Unlimited, Not A Monthly Subscription.
@@ -10,10 +23,17 @@ For English;
 8. If your card does not have 3D requirement for Direct API Payments, 3D Verification will not appear.
 9. In Direct API Payments, If Illegally Purchased Products (Keys) Are Verified, They Are Banned And Lawsuits, etc. If necessary, necessary information is given to the parties.
 10. Card Information Entered in Direct API Payments is Not Recorded, No Data is Kept.
+11. In Case of Malicious Intention, Your Herc.ai API Key May Be Deleted by Luppux Development.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Türkçe İçin;
+`Türkçe İçin;`
+
+# Hercai API Key Ne İşe Yarar?
+
+*Normal Şartlarda Dakikada Question & Text2Image API İstekleri Ücretsiz Olarak 15 Adet Verilmektedir, Bu Sınırlama Her Dakikada Sıfırlanmaktadır, Ücretsiz Versiyonda 15 Adet Limiti Geçerseniz 429 Too Many Request Kodunu Alırsınız, Bu Sıfırlamayı Kaldırabilmek İçin Tek Seferlik Ücret Ödiyerek Dakikada 15 Adet Olarak İstek Limitinizi Dakikada 1000 Adet Saatlik 60000 İstek Şeklinde Geliştirebilirsiniz.*
+
+# Satın Alım Kuralları
 
 1. Yanlış E-Posta veya İsim Girilmesi Halinde İade Kabul Edilmeyecektir.
 2. Verilen Anahtarlar Tek Seferliktir, Yani Sınırsızdır, Aylık Abonelik Değildir.
@@ -25,3 +45,4 @@ Türkçe İçin;
 8. Direct API Ödemelerinde Kartınızda Eğer 3D Zorunluluğu Mevcut Değil İse 3D Doğrulama Çıkmamaktadır.
 9. Direct API Ödemelerinde Yasa Dışı Yollarla Alınmış Ürün(Key)'ler Doğrulandığı Taktirde Yasaklanılmakta Ve Dava vb. Durumu Olduğu Taktirde Gerekli Bilgiler Taraflara Verilmektedir.
 10. Direct API Ödemelerinde Girilen Kart Bilgileri Kayıt Edilmemektedir, Veri Tutulmamaktadır.
+11. Kötü Bir Niyet İle karşılaşıldığı Durumda, Herc.ai API Keyiniz Luppux Development Tarafından Silinebilir.
