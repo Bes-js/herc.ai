@@ -24,6 +24,7 @@
 9. In Direct API Payments, If Illegally Purchased Products (Keys) Are Verified, They Are Banned And Lawsuits, etc. If necessary, necessary information is given to the parties.
 10. Card Information Entered in Direct API Payments is Not Recorded, No Data is Kept.
 11. In Case of Malicious Intention, Your Herc.ai API Key May Be Deleted by Luppux Development.
+12. We do not record any data other than your name and surname and e-mail address that you enter (we do not record your card, address, phone information). We request your name and surname information to create PayTR Hash and your e-mail address to deliver your API Key. (If the User Wants His/her Name, Surname and Email Address to be Deleted, He/she Can Request a Reset via discord.gg/luppux or via the Email That Delivered Your API Key)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -46,3 +47,4 @@
 9. Direct API Ödemelerinde Yasa Dışı Yollarla Alınmış Ürün(Key)'ler Doğrulandığı Taktirde Yasaklanılmakta Ve Dava vb. Durumu Olduğu Taktirde Gerekli Bilgiler Taraflara Verilmektedir.
 10. Direct API Ödemelerinde Girilen Kart Bilgileri Kayıt Edilmemektedir, Veri Tutulmamaktadır.
 11. Kötü Bir Niyet İle karşılaşıldığı Durumda, Herc.ai API Keyiniz Luppux Development Tarafından Silinebilir.
+12. Girdiğiniz İsim Soyisim Ve Mail Adresiniz Dışındaki Hiç Bir Veriyi Kayıt Altına Almıyoruz (Kart,Adres,Telefon Bilgilerinizi Kayıt Etmiyoruz), İsim Soyisim Bilginizi PayTR Hash Oluşturmak İçin Mail Adresinizi İse API Keyinizi Teslim Edebilmek İçin İstemekteyiz. (Eğer Kullanıcı İsim Soyisim Ve Mail Adresininde Silinmesini İster İse discord.gg/luppux Üzerinden Veya API Keyinizi Teslim Eden Mail Üzerinden Sıfırlama İsteğinde Bulunabilir)
