@@ -38,6 +38,35 @@ question(object:{model:"v3"|"v3-32k"|"turbo"|"turbo-16k"|"gemini",content:string
  drawImage(object:{model:"v1"|"v2"|"v2-beta"|"v3"|"lexica"|"prodia"|"simurg"|"animefy"|"raava"|"shonin",prompt:string,negative_prompt?:string|""}):Promise<{model:string,prompt:string,url:string}>;
 
 
+/**
+ * The Question You Want to Ask Artificial Intelligence.
+ * @param {string} content The Question You Want to Ask Artificial Intelligence.
+ * @param {string} user It includes the features that you want to be included in the output you want from artificial intelligence.
+ * @example client.betaQuestion({content:"how are you?"})
+ * @type {string} The Question You Want to Ask Artificial Intelligence.
+ * @returns {Hercai}
+ * @async
+ */
+betaQuestion(object:{content:string,user?:string|""}):Promise<{content:string,reply:string}>;
+
+
+/**
+* Tell Artificial Intelligence What You Want to Draw.
+* @param {string} prompt Tell Artificial Intelligence What You Want to Draw.
+* @param {string} negative_prompt It includes the features that you do not want to be included in the output you want from artificial intelligence.
+* @param {string} sampler "DPM-Solver" , "SA-Solver"
+* @param {string} image_style "Cinematic" , "Photographic" , "Anime" , "Manga" , "Digital Art" , "Pixel art" , "Fantasy art" , "Neonpunk" , "3D Model" , "Null"
+* @param {number} width The width of the image you want to draw.
+* @param {number} height The height of the image you want to draw.
+* @param {number} steps The number of steps you want to draw the image.
+* @param {number} scale The scale of the image you want to draw.
+* @example client.betaDrawImage({prompt:"anime girl"})
+* @type {string} Tell Artificial Intelligence What You Want to Draw.
+* @returns {Hercai}
+* @async
+*/
+betaDrawImage(object:{prompt:string,negative_prompt?:string|"",sampler?:'DPM-Solver'|'SA-Solver',image_style?:"Cinematic"|"Photographic"|"Anime"|"Manga"|"Digital Art"|"Pixel art"| "Fantasy art"|"Neonpunk"|"3D Model"|"Null",width?:number,height?:number,steps?:number,scale?:number}):Promise<{model:string,prompt:string,url:string}>;
+
 }
 
 declare namespace Hercai { }
