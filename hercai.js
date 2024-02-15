@@ -79,6 +79,67 @@ async drawImage({model = "v3",prompt,negative_prompt=""}){
     }
 
 
+/**
+ * This Model Is Still In Development And Beta Stage.
+ * The Question You Want to Ask Artificial Intelligence.
+ * @param {string} content The Question You Want to Ask Artificial Intelligence.
+ * @param {string} user It includes the features that you want to be included in the output you want from artificial intelligence.
+ * @example client.betaQuestion({content:"how are you?"})
+ * @type {string} The Question You Want to Ask Artificial Intelligence.
+ * @returns {Hercai}
+ * @async
+ */
+async betaQuestion({content,personality="",user=""}){
+    if(!content || content == undefined || content == null)throw new Error("Please specify a question!");
+    try{
+    var api = await axios.get(`https://hercai.onrender.com/beta/hercai?question=`+encodeURI(content)+`&user=`+encodeURI(user),{
+    headers: {
+        "content-type": "application/json",
+        "Authorization": this.apiKey,
+    },
+    data:{
+        personality: personality
+    }
+    })
+    return api.data;
+    }catch(err){
+    throw new Error("Error: "+ err.message)   
+    }
+    }
+
+
+/**
+* This Model Is Still In Development And Beta Stage.
+* Tell Artificial Intelligence What You Want to Draw.
+* @param {string} prompt Tell Artificial Intelligence What You Want to Draw.
+* @param {string} negative_prompt It includes the features that you do not want to be included in the output you want from artificial intelligence.
+* @param {string} sampler "DPM-Solver" , "SA-Solver"
+* @param {string} image_style "Cinematic" , "Photographic" , "Anime" , "Manga" , "Digital Art" , "Pixel art" , "Fantasy art" , "Neonpunk" , "3D Model" , "Null"
+* @param {number} width The width of the image you want to draw.
+* @param {number} height The height of the image you want to draw.
+* @param {number} steps The number of steps you want to draw the image.
+* @param {number} scale The scale of the image you want to draw.
+* @example client.betaDrawImage({prompt:"anime girl"})
+* @type {string} Tell Artificial Intelligence What You Want to Draw.
+* @returns {Hercai}
+* @async
+*/  
+async betaDrawImage({prompt,negative_prompt="",sampler='DPM-Solver',image_style="Null",width=1024,height=1024,steps=20,scale=5}){
+if(!["DPM-Solver","SA-Solver"].some(ind => sampler == ind)) sampler = "DPM-Solver";
+if(!prompt || prompt == undefined || prompt == null)throw new Error("Please specify a prompt!");
+try{
+    var api = await axios.get(`https://hercai.onrender.com/beta/text2image`+"?prompt="+encodeURI(prompt)+"&negative_prompt="+encodeURI(negative_prompt)+"&sampler="+encodeURI(sampler)+"&image_style="+encodeURI(image_style)+"&width="+width+"&height="+height+"&steps="+steps+"&scale="+scale,{
+        headers: {
+            "content-type": "application/json",
+            "Authorization": this.apiKey,
+        },
+    })
+    return api.data;
+    }catch(err){
+    throw new Error("Error: "+ err.message)   
+    }
+}
+
 }
 
 module.exports = Hercai;
