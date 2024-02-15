@@ -1,6 +1,6 @@
 {
   "name": "hercai",
-  "version": "12.1.1",
+  "version": "12.2.0",
   "description": "A powerful library for interacting with the Herc.ai API",
   "main": "index.js",
   "types": "./types/index.d.ts",
@@ -93,7 +93,17 @@
     "anime",
     "bes",
     "fivesobes",
-    "five"
+    "five",
+    "neonpunk",
+    "pixel-art",
+    "digital-art",
+    "manga",
+    "photographic",
+    "cinematic",
+    "3d",
+    "3d-model",
+    "beta",
+    "beta-model"
   ],
   "repository": {
     "type": "git",
