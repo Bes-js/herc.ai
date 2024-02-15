@@ -105,7 +105,35 @@ console.log(response.url);
 hercai <Your Question>
 ```
 **[Herc.ai](https://discord.gg/luppux) Also Supports TypeScript And EsModule 🥳!**
+#
 
+**Example Beta Model's Usage;**
+```js
+import { Hercai } from "hercai";
+
+const herc = new Hercai(); //new Hercai("your api key"); => Optional
+
+
+herc.betaQuestion({content:"hi, how are you?",user:'chat-id'})
+.then((response) => {
+console.log(response.reply);
+});
+
+/* DrawImage Example */
+herc.betaDrawImage({
+prompt:"anime girl",
+negative_prompt:"", 
+sampler:"DPM-Solver", /* Default => DPM-Solver */
+image_style:"Null", /* Default => Null */
+width:1024, /* Default => 1024 */
+height:1024, /* Default => 1024 */
+steps:20, /* Default => 20 */
+scale:5 /* Default => 5 */
+}).then((response) => {
+console.log(response.url);
+});
+
+```
 #
 # Credits
  
