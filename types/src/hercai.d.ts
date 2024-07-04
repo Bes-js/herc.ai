@@ -15,6 +15,11 @@ declare class Hercai {
 * @param {string} model "turbo" (GPT-3.5 Turbo)
 * @param {string} model "turbo-16k" (GPT-3.5 Turbo-16k)
 * @param {string} model "gemini" (Google Gemini-Pro)
+* @param {string} model "llama3-70b" (Llama-3-70b)
+* @param {string} model "llama3-8b" (Llama-3-8b)
+* @param {string} model "mixtral-8x7b" (Mixtral-8x7b)
+* @param {string} model "gemma-7b" (Gemma-7b)
+* @param {string} model "gemma2-9b" (Gemma2-9b)
 * @param {string} content The Question You Want to Ask Artificial Intelligence.
 * @param {string} personality It includes the features that you want to be included in the output you want from artificial intelligence.
 * @example client.question({model:"v3-beta",content:"how are you?"})
@@ -22,7 +27,7 @@ declare class Hercai {
 * @returns {Hercai}
 * @async
 */
-question(object:{model:"v3"|"v3-32k"|"turbo"|"turbo-16k"|"gemini",content:string,personality?:string|""}):Promise<{content:string,reply:string}>;
+question(object:{model:"v3"|"v3-32k"|"turbo"|"turbo-16k"|"gemini"|"llama3-70b"|"llama3-8b"|"mixtral-8x7b"|"gemma-7b"|"gemma2-9b",content:string,personality?:string|""}):Promise<{content:string,reply:string}>;
 
 
 /**
