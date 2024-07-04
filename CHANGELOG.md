@@ -1,3 +1,21 @@
+# Version 12.3.0
+
+> 🟢 Added
+
+New Chat Models Added.
+
+> 🔴 Removed 
+
+None
+
+> 🔃 Changed
+
+None
+
+> 🪄 Patches
+
+None
+
 # Version 12.2.0
 Timestamp: Thu Feb 27 2024 01:33:55 GMT+0000 (Coordinated Universal Time)
 
