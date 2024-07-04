@@ -26,6 +26,11 @@ class Hercai {
 * @param {string} model "turbo" (GPT-3.5 Turbo)
 * @param {string} model "turbo-16k" (GPT-3.5 Turbo-16k)
 * @param {string} model "gemini" (Google Gemini-Pro)
+* @param {string} model "llama3-70b" (Llama-3-70b)
+* @param {string} model "llama3-8b" (Llama-3-8b)
+* @param {string} model "mixtral-8x7b" (Mixtral-8x7b)
+* @param {string} model "gemma-7b" (Gemma-7b)
+* @param {string} model "gemma2-9b" (Gemma2-9b)
 * @param {string} content The Question You Want to Ask Artificial Intelligence.
 * @param {string} personality It includes the features that you want to be included in the output you want from artificial intelligence.
 * @example client.question({model:"v3-beta",content:"how are you?"})
@@ -34,7 +39,7 @@ class Hercai {
 * @async
 */
 async question({model = "v3",content,personality=""}){
-if(!["v3","gemini","v3-32k","turbo","turbo-16k"].some(ind => model == ind)) model = "v3";
+if(!["v3","gemini","v3-32k","turbo","turbo-16k","llama3-70b","llama-8b","mixtral-8x7b","gemma-7b","gemma2-9b"].some(ind => model == ind)) model = "v3";
 if(!content || content == undefined || content == null)throw new Error("Please specify a question!");
 try{
 var api = await axios.get(`https://hercai.onrender.com/${model}/hercai?question=`+encodeURI(content),{
