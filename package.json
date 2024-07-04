@@ -1,6 +1,6 @@
 {
   "name": "hercai",
-  "version": "12.2.0",
+  "version": "12.3.1",
   "description": "A powerful library for interacting with the Herc.ai API",
   "main": "index.js",
   "types": "./types/index.d.ts",
