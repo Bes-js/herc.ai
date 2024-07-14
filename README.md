@@ -139,6 +139,7 @@ console.log(response.url);
  
 **Made by [FiveSoBes](https://github.com/Bes-js) And [Luppux Development](https://github.com/Luppux)**
 
+<p align="center"> <a href="https://render.com?ref=hercai"> <img src="https://raw.githubusercontent.com/Bes-js/herc.ai/main/sponsor-logo.png"></a> </p>
 
 # Contact & Support & Donate
 <a href="https://www.buymeacoffee.com/beykant" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" width="120px" height="30px" alt="Buy Me A Coffee"></a>
