@@ -53,7 +53,6 @@ const hercai = new Hercai({
 ```
 
 **Example Stream Completions For TypeScript;**
-> ⚠️ 
 ```ts
 import { Hercai } from "hercai";
 const hercai = new Hercai();

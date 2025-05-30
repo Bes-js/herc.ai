@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "allowJs": true,
+    "target": "ESNext",
+    "declaration": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "emitDeclarationOnly": false,
+    "moduleResolution": "node",
+    "module": "CommonJS",                        
+    "outDir": "./build",                        
+    "rootDir": "./src",                  
+    "strict": true,                           
+    "esModuleInterop": true,                
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true,
+    "tsBuildInfoFile": ".tsbuildinfo"
+  },
+  "include": [
+   "src",
+   "package.json",
+   "assets/*",
+   "README.md",
+   "hercai_logo.png",
+   "LICENSE.md"
+  ],
+  "exclude": ["node_modules", "build", "**/*.spec.ts"]
+}
